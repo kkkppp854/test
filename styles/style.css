@@ -1,0 +1,216 @@
+:root {
+  --h-text: #333;
+  --banner-navi: #3F00FF;
+  --banner-yellow: #FFD00E;
+  --button-gradient:#FFB800;
+  --banner-cyan: #3BBAFF;
+  --font-size: 16px;
+
+}
+
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  color: #000;
+  line-height: 1.6;
+}
+
+/* Header */
+.header {
+  background: url("green-paint-brush-textured-background.jpg") no-repeat center/cover, #fffefc;
+  padding: 20px 0;
+}
+
+.header__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1584px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Logo */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.logo svg {
+  flex-shrink: 0;
+}
+.text-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.sub-text {
+  font-size: 9px;
+  color: #333;
+}
+
+/* Navigation */
+.nav ul {
+  list-style: none;
+  display: flex;
+  gap: 24px;
+  margin: 0;
+  padding: 0;
+}
+.nav a {
+  font-weight: 600;
+  font-size: 20px;
+  text-decoration: none;
+  color: #333;
+  transition: color 0.2s;
+}
+
+/* Contacts */
+.header__contacts {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+.contacts__social {
+  display: flex;
+  gap: 12px;
+}
+.contacts__worktime {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2px;
+}
+.days {
+  font-size: 14px;
+  color: #333;
+}
+.phone {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 26px;
+  font-weight: 700;
+}
+
+
+
+/* Контейнер слайдера */
+.slider {
+  position: relative;
+  max-width: 1700px;
+  margin: auto;
+  padding: 60px;
+  background-color: var(--banner-navi);
+  border-radius: 40px;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  color: #fff;
+}
+
+.banner__content {
+  max-width: 900px;
+  margin-top: 150px;
+}
+
+.banner__subtitle {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.banner__text {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.h1__text h1 {
+  font-size: 80px;
+  margin: 0px;
+  font-weight: 900;
+  line-height: 1.1;
+  letter-spacing: 0%;
+}
+
+.h1__text h4 {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+/* Кнопка */
+.btn {
+  display: inline-block;
+  padding: 20px 50px;
+  width: 200px;
+  background: linear-gradient(134deg, var(--banner-yellow) -7%, var(--button-gradient) 109%);
+  border-radius: 10px;
+  font-weight: 700;
+  font-size: 20px;
+  color: #000;
+  text-decoration: none;
+  transition: transform 0.3s;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+}
+
+.banner__pic {
+  width: 800px;
+  height: 550px;
+  background: url("../img/pic1.png") no-repeat center/cover;
+  transform: scaleX(-1);
+}
+
+
+.learn-more {
+  align-items: center;
+  gap: 12px;
+  color: #fff;
+}
+
+.learn-more__text { 
+  text-align: center;
+  margin: auto;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.learn-more__arrow svg {
+  display: block;
+  margin: auto;
+}
+
+.flex {
+    display: flex;
+}
+
+.slider-dots {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin: 50px;
+  transform: translateX(-50%);
+}
+
+.dot {
+  background-color: rgba(0,0,0,0);
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  border-color: #fff;
+  border-width: 1px;
+  cursor: pointer;
+}
+
+.dot:hover {
+  opacity: 1;
+}
+
+.dot.active {
+  background: var(--banner-yellow);
+  opacity: 1;
+  border: none;
+}
